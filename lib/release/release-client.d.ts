@@ -25,7 +25,6 @@ export declare class ReleaseClient implements ReleaseClientInterface {
     private readonly editClient;
     constructor(tokenProvider: TokenProvider, editClient: EditsClient);
     submitForReview(packageName: string, versionName: string, options?: SubmitForReviewOptions): Promise<void>;
-    private _addRelease;
     getReleases(packageName: any, trackId: TrackId, editId?: string): Promise<androidpublisher_v3.Schema$TrackRelease[]>;
     private _getReleaseNotesForVersion;
 }
